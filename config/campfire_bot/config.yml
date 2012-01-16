@@ -1,0 +1,34 @@
+development: &base
+  site: book
+  use_ssl: true
+  rooms:
+    - Graphic Design
+  api_key: b806fac62dca9a4c028920b95c2615eb8fb6f08d
+  nickname: Reg
+  fullname: Reginald
+  enable_plugins: 
+    - xkcd
+    - fail
+    - excuse
+    - lolcats
+    - image_me
+    - insult
+    - compliment
+    - help
+    - deploy
+    - selenium
+    - restart
+    - first_world_problems
+    - say_whats
+    - selleck
+    - rolodex
+    - teamcity_simple
+    - clearscreen
+    - magic_eight_ball
+    - performance_alerts
+
+production:
+  <<: *base
+  rooms:
+    - BookRenter
+    - BookRenter w/ Sounds

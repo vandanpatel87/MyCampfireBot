@@ -1,0 +1,33 @@
+development:
+  site: campfire_subdomain_name 
+  use_ssl: true
+  rooms:
+  - Main room
+  - Other room
+  api_key: your_api_key
+  nickname: Bot
+  fullname: Bot Name
+  password: not_actually_needed
+  twitter_feed: 'http://search.twitter.com/search.atom?q=from%3Atimriley+OR+from%3Ahughevans+OR+from%3Aschlick+OR+from%3Aseanodowd'
+  twitter_hide_replies: false
+  enable_plugins: 
+    - xkcd
+    - basecamp
+  custom_plugins_path: /path/to/your/plugins
+  enable_custom_plugins:
+    - custom_plugin_name
+production:
+  site: campfire_subdomain_name
+  use_ssl: true
+  rooms:
+  - Company Chat
+  username: foo@bar.com
+  nickname: Bot Name
+  password: password
+  twitter_feed: 'http://search.twitter.com/search.atom?q=from%3Atimriley+OR+from%3Ahughevans+OR+from%3Aschlick+OR+from%3Aseanodowd'
+  twitter_hide_replies: false
+  enable_plugins: 
+    - xkcd
+    - basecamp
+  svn_urls:
+    - http://your.svn/url/
