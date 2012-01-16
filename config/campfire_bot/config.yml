@@ -3,9 +3,9 @@ development: &base
   use_ssl: true
   rooms:
     - Graphic Design
-  api_key: b87b690f016e0240fe1aeedbaf91b6820fb5aa45
-  nickname: Al
-  fullname: Al the Gator
+  api_key: b806fac62dca9a4c028920b95c2615eb8fb6f08d
+  nickname: Reg
+  fullname: Reginald
   enable_plugins: 
     - xkcd
     - fail
