@@ -13,7 +13,7 @@ class ImageMe < CampfireBot::Plugin
   end
   
   def random_bieber_image(msg)
-    msg.speak(random_url('mark anthony'))
+    msg.speak(random_url('justin bieber'))
   end
 
   def random_image(msg)    

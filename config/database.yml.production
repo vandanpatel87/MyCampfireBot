@@ -1,0 +1,22 @@
+<% unique_name = "#{RAILS_ROOT.match(/^.*\/(\w+)\/\w+\/\w+$/)[1]}_#{`hostname`.tr(".-","").chomp}" %>
+
+base: &base
+  adapter: sqlite3
+  host: localhost
+  username: br_db_user
+  password: br_db_pass
+  encoding: utf8
+  reconnect: true
+  collation: utf8_general_ci
+
+development:
+  database: reg_development_<%= unique_name %>.sqlite3
+  <<: *base
+
+test:
+  database: reg_test_<%= unique_name %><%= ENV['TEST_ENV_NUMBER'] %>.sqlite3
+  <<: *base
+
+production:
+  database: /var/www/reg/shared/reg_production.sqlite3
+  <<: *base

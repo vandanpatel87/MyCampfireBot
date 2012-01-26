@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+ENV['RAILS_ENV'] = ARGV.first
+
+if ENV['RAILS_ENV'].nil?
+  ENV['RAILS_ENV'] = 'development'
+end
+
+require File.join(File.dirname(__FILE__),'..',"config","environment")
+# Run this script with the environment as the only argument. eg. ./script/bot development
+BOT_ENVIRONMENT = ENV['RAILS_ENV']
+
+require 'rubygems'
+require 'bundler/setup'
+require 'campfire_bot/bot'
+
+silence_warnings do
+  bot.connect
+  bot.run
+end

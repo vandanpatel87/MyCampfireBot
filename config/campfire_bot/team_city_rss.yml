@@ -1,0 +1,9 @@
+url: 
+username: 
+password: 
+deploy_branch: 
+ignored_configurations:
+  - 'Cart (queued parallels)'
+  - 'Cart (Parallel-unfriendly test suites, synchronized)'
+  - 'Cart (queued parallels, parallel-unfriendly tests synchronized)'
+  - 'Course Data Crawler'
