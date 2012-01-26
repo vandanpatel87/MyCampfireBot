@@ -22,7 +22,7 @@ class Text < CampfireBot::Plugin
     @client.account.sms.messages.create(
       :from => '+16504926856',
       :to => '+1' + number,
-      :body => message + "\r\n" + "Sent From BookRenter.com"
+      :body => message + "\r\n" + "BookRenter.com"
     )
  
   end 
