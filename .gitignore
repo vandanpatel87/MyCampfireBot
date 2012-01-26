@@ -4,3 +4,5 @@
 tmp/pids/bot.pid
 *.sqlite3
 *.log
+config/campfire_bot/config.yml
+
