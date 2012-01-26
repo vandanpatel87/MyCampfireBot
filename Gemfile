@@ -50,9 +50,17 @@ gem 'nokogiri', "1.4.4"
 gem "httparty", "0.6.1"
 gem "team_city_insight", "~> 0.0.2"
 gem "lipsum", "~> 1.2.0"
+<<<<<<< Updated upstream
+=======
+gem "twilio-ruby"
+>>>>>>> Stashed changes
 
 
 group :development, :test do
   gem 'rspec', '= 1.3.0'
   gem "awesome_print", :require => nil
+<<<<<<< Updated upstream
 end
+=======
+end
+>>>>>>> Stashed changes

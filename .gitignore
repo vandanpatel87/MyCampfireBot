@@ -1,3 +1,6 @@
 .DS_Store
 **/.DS_Store
 **/**/.DS_Store
+tmp/pids/bot.pid
+*.sqlite3
+*.log

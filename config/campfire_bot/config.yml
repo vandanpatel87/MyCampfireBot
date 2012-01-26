@@ -2,30 +2,29 @@ development: &base
   site: book
   use_ssl: true
   rooms:
-    - Graphic Design
-  api_key: b806fac62dca9a4c028920b95c2615eb8fb6f08d
-  nickname: Reg
-  fullname: Reginald
+    - Winterns
+  api_key: 9855c889bcde0b4968d921e7848480ab6e0868bc
+  nickname: SRK
+  fullname: Shah Rukh Khan
   enable_plugins: 
     - xkcd
     - fail
     - excuse
     - lolcats
-    - image_me
     - insult
+    - image_me
+    - say_hello
     - compliment
     - help
-    - deploy
     - selenium
     - restart
     - first_world_problems
     - say_whats
     - selleck
     - rolodex
-    - teamcity_simple
     - clearscreen
     - magic_eight_ball
-    - performance_alerts
+    - text
 
 production:
   <<: *base
