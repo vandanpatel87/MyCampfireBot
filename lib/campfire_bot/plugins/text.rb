@@ -12,9 +12,15 @@ class Text < CampfireBot::Plugin
     number = out.shift
     msg.speak("Destination Number : " + number)
     
-    sms_body = out.join(" ")
-    msg.speak("Message Sent: " + sms_body)
-    deliver_message(sms_body,number)
+    myString = out.join(" ")
+    msg.speak("Message to be sent : " + myString)
+    
+    array = myString.split(//)
+    
+    begin
+      deliver_message(array.slice!(0...160).to_s,number)
+    end while (out.size > 0)
+    
   end
   
  def deliver_message(sms_body,number)
@@ -29,6 +35,7 @@ class Text < CampfireBot::Plugin
       :to => '+1' + number,
       :body => sms_body 
     )  
+    
   end
 end
  
