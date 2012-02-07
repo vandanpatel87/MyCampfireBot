@@ -22,7 +22,7 @@ class Rolodex < CampfireBot::Plugin
         msg.speak("Nice try, but I had some problems.")
         employee.errors.full_messages.each do |error|
           msg.speak(error)
-        end
+        end 
       end
     rescue ActiveRecord::UnknownAttributeError => e
       msg.speak("Nice try, but I had a problem: #{e.message}")
@@ -40,7 +40,7 @@ class Rolodex < CampfireBot::Plugin
     end
   end
   
-  private
+  private  
   
   def message_to_options(message)
     message.split(',').inject({}) {|acc, e| key, val = e.split(':'); acc[key.strip.parameterize.underscore] = val.strip; acc}
